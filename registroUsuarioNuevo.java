@@ -55,6 +55,7 @@ public class registroUsuarioNuevo {
      * input the corresponding value again.
      */
     public static void main(String[] args) {
+        //Inicialització
         nameInput();
         emailInput();
         passwordInput();
