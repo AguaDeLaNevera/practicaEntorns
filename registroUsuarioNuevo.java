@@ -7,7 +7,7 @@ Then, it calls the check method from the validarCampos class to validate the inp
 import java.util.Scanner;
 
 public class registroUsuarioNuevo {
-    static String name = "";
+    static String nombreDeUsuario = "";
     static String email = "";
     static String password = "";
     static String code = "";
@@ -16,9 +16,9 @@ public class registroUsuarioNuevo {
 
     // name input
     public static void nameInput() {
-        while (!vc.nameCheck(name)) {
+        while (!vc.nameCheck(nombreDeUsuario)) {
             System.out.println("Introduce your name: ");
-            name = sc.nextLine();
+            nombreDeUsuario = sc.nextLine();
         }
     }
 
@@ -55,7 +55,7 @@ public class registroUsuarioNuevo {
      * input the corresponding value again.
      */
     public static void main(String[] args) {
-        //Inicialització
+        // Inicialització
         nameInput();
         emailInput();
         passwordInput();
