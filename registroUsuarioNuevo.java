@@ -54,11 +54,15 @@ public class registroUsuarioNuevo {
      * prompts the user to
      * input the corresponding value again.
      */
-    public static void main(String[] args) {
-        // Inicialització
+    public static void init(){
+        //inicialitzem els mètodes
         nameInput();
         emailInput();
         passwordInput();
         codeInput();
     }
+    public static void main(String[] args) {
+        // Inicialització
+        init();
+    }   
 }
