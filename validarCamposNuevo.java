@@ -6,8 +6,7 @@ import java.util.Random;
  * comprobación.
  */
 public class validarCamposNuevo {
-
-    String[] names = { "Ricardo", "Ignasi", "Miquel", "Jaume", "Pere", "Joan", "Pedro", "Juan", "Antonio", "Albacete" };
+   
     String[] domains = { "paucasesnovescifp", "yahoo", "gmail", "hotmail" };
     String letras = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
     String numeros = "0123456789";
@@ -25,8 +24,7 @@ public class validarCamposNuevo {
      *         en caso contrario.
      */
     // name check
-
-    public boolean nameCheck(String name) {
+    public boolean nameCheck(String name, String[] names) {
         // Comprobación de que el nombre no está repetido
         for (int i = 0; i < names.length; i++) {
             if (name == names[i]) {
