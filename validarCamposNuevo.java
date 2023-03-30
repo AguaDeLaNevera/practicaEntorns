@@ -24,6 +24,7 @@ public class validarCamposNuevo {
      *         en caso contrario.
      */
 
+    // encapsulamiento de atributos
     public validarCamposNuevo() {
         this.domains = new String[] { "paucasesnovescifp", "yahoo", "gmail", "hotmail" };
         this.letras = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
