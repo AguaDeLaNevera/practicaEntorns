@@ -56,6 +56,7 @@ public class registroUsuarioNuevo {
      * prompts the user to
      * input the corresponding value again.
      */
+    // método init donde agregamos los métodos a ejecutar
     public static void init() {
         // inicialitzem els mètodes
         nameInput();
