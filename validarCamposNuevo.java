@@ -6,11 +6,11 @@ import java.util.Random;
  * comprobación.
  */
 public class validarCamposNuevo {
-   
-    String[] domains = { "paucasesnovescifp", "yahoo", "gmail", "hotmail" };
-    String letras = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    String numeros = "0123456789";
-    String simbolos = "!@#$%^&*()_+-={}[]\\|:;\"'<>,.?/";
+
+    String[] domains;
+    String letras;
+    String numeros;
+    String simbolos;
 
     /**
      * Método que comprueba si los campos introducidos son válidos y el código de
@@ -23,6 +23,14 @@ public class validarCamposNuevo {
      * @return True si todos los campos son válidos y los códigos coinciden, False
      *         en caso contrario.
      */
+
+    public validarCamposNuevo() {
+        this.domains = new String[] { "paucasesnovescifp", "yahoo", "gmail", "hotmail" };
+        this.letras = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        this.numeros = "0123456789";
+        this.simbolos = "!@#$%^&*()_+-={}[]\\|:;\"'<>,.?/";
+    }
+
     // name check
     public boolean nameCheck(String name, String[] names) {
         // Comprobación de que el nombre no está repetido
@@ -41,6 +49,10 @@ public class validarCamposNuevo {
         return true;
     }
 
+    /**
+     * @param email
+     * @return boolean
+     */
     // email check
     public boolean emailCheck(String email) {
         // Comprobación de que el email es válido
@@ -62,6 +74,10 @@ public class validarCamposNuevo {
         return true;
     }
 
+    /**
+     * @param password
+     * @return boolean
+     */
     // password check
     public boolean passwordCheck(String password) {
         // Comprueba que la contraseña tiene 8 caracteres
